@@ -1,0 +1,187 @@
+html.body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.sidemenu-mobile_style {
+  height: 100%;
+  width: fit-content;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  -webkit-box-shadow: 3px 0px 5px 0px rgba(203, 211, 210, 0.75);
+  -moz-box-shadow: 3px 0px 5px 0px rgba(203, 211, 210, 0.75);
+  box-shadow: 3px 0px 5px 0px rgba(203, 211, 210, 0.75);
+}
+.sidemenu-mobile_style .logo {
+  display: none;
+}
+.sidemenu-mobile_style .menu-list li span {
+  display: none;
+}
+
+.responsive-sidebar {
+  display: none;
+}
+.responsive-sidebar .side-menu .toggle-btn {
+  color: #01a4ef;
+  font-size: 7vw;
+}
+.responsive-sidebar .logo img {
+  display: block;
+  width: 75%;
+}
+
+.desktop-sidebar.side-menu_bg {
+  background-color: #fff;
+  height: 100%;
+}
+.desktop-sidebar.side-menu_bg .logo {
+  padding: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-sidebar {
+    display: none;
+  }
+  .desktop-sidebar .menu-content {
+    margin-top: 30px;
+  }
+
+  .responsive-sidebar {
+    display: flex;
+  }
+  .responsive-sidebar .side-menu {
+    display: inline-flex;
+  }
+}
+.responsive-sidebar {
+  padding: 45px 15px;
+}
+
+.desktop-sidebar.side-menu_bg .menu-list .menu-title {
+  font-size: 1.2rem;
+  padding: 30px;
+  text-align: center;
+  color: #01a4ef;
+}
+.desktop-sidebar.side-menu_bg .menu-list .menu-content {
+  margin-top: 40px;
+}
+.desktop-sidebar.side-menu_bg .menu-list li {
+  list-style: none;
+  padding: 0 22px 8px 22px;
+  margin-bottom: 15px;
+}
+.desktop-sidebar.side-menu_bg .menu-list li a {
+  color: #caccdb;
+  font-size: 1.2rem;
+}
+.desktop-sidebar.side-menu_bg .menu-list li a i {
+  font-size: 1.8rem;
+  position: relative;
+  top: 8px;
+}
+.desktop-sidebar.side-menu_bg .menu-list li span {
+  margin-left: 12px;
+}
+.desktop-sidebar.side-menu_bg .menu-list li:hover,
+.desktop-sidebar.side-menu_bg .menu-list :active,
+.desktop-sidebar.side-menu_bg .menu-list .list-active {
+  color: #525c68;
+  background-color: #f5f6fd;
+  border-right: 2px solid #01a4ef;
+}
+.desktop-sidebar.side-menu_bg .menu-list li:hover a,
+.desktop-sidebar.side-menu_bg .menu-list :active a,
+.desktop-sidebar.side-menu_bg .menu-list .list-active a {
+  color: #525c68;
+}
+
+.content-body {
+  background-color: #f5f6fd;
+  height: 100%;
+  padding: 30px 50px;
+}
+.content-body .content-title {
+  color: #525c68;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.content-body .configuration {
+  background-color: #fff;
+  padding: 30px 50px;
+}
+
+.save, .run {
+  border-radius: 10px;
+  float: right;
+  background-color: #01a4ef;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 10px;
+  width: 25%;
+}
+
+.run {
+  width: 50%;
+  margin-top: 25px;
+}
+
+.select-objects {
+  margin: 20px 0;
+}
+.select-objects .title {
+  color: #525c68;
+  font-size: 1rem;
+}
+.select-objects .objects .items {
+  color: #caccdb;
+  border: 1px solid #f5f6fd;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px 0px;
+  padding-bottom: 5px;
+}
+.select-objects .objects .items i {
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+  height: 15vh;
+}
+.select-objects .objects .items .item-title {
+  font-size: 1rem;
+}
+.select-objects .objects .select-items {
+  color: #01a4ef;
+  background-color: #f5f6fd;
+}
+.select-objects .objects .select-items::before {
+  content: "";
+  background-image: url(../images/tick.svg);
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -24px;
+  right: -24px;
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+// Select Objects 
+
+// Colors
+$text-color: #525c68;
+$text-sec-color: #caccdb;
+$secondry-color: #f5f6fd;
+
+// Fonts
+$titleFontSize: 1rem;
+$itmesFontSize: 5rem;
+
+.select-objects {
+  border-bottom: 1px solid $text-sec-color;
+  margin: 20px 0;
+  .title {
+    color: $text-color;
+    font-size: 1rem;
+  }
+  .objects {
+    .items {
+      color: $text-sec-color;
+      border: 1px solid $secondry-color;
+      border-radius: 15px;
+      text-align: center;
+      margin: 10px 0px;
+      padding-bottom: 5px;
+      i {
+        font-size: 5rem;
+        text-align: center;
+        display: block;
+        height: 15vh;
+      }
+      .item-title {
+        font-size: 1rem;
+      }
+    }
+    .select-items {
+      color: $primery-color;
+      background-color: $secondry-color;
+    }
+    .select-items::before {
+      content: "";
+      background-image: url(../images/tick.svg);
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: -24px;
+      right: -24px;
+    }
+  }
+  
+}
