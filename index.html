@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Occ Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/styles.css">
+
+    <link rel="stylesheet" href="assets/styles/extendStyle.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body onresize="resize()" onload="loadIndex()">
+    <div class="dashboard-container container-fluid">
+        <div class="row">
+            <div class="col-12 responsive-sidebar side-menu_bg">
+                <div class="side-menu">
+                    <div class="row">
+                        <div class="col-3 pr-0">
+                            <i class="icon-bars toggle-btn" onclick="openSideMenu()" id="toggle-btn"></i>
+                        </div>
+                        <div class="col-9 logo">
+                            <img src="assets/images/Blackstone logo.svg" alt="OCC logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 desktop-sidebar side-menu_bg  p-0" id="desktop-version">
+                <div class="nav-side-menu side-menu ">
+                    <div class="logo">
+                        <img src="assets/images/Blackstone logo.svg" alt="occ logo">
+                    </div>
+
+                    <div class="menu-list">
+
+                        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a> -->
+                        <p class="menu-title">Objects Classification and Counting</p>
+                        <ul id="menu-content" class="menu-content">
+                            <li class="list-active">
+                                <a href="index.html" onclick="closeNav()">
+                                    <i class="icon-configuration-active"></i>
+                                    <span>Configration</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="analytics.html" onclick="closeNav()">
+                                    <i class="icon-video-analytics-actrive"></i>
+
+                                    <span>Video Analytics</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-md-10 col-sm-12 p-0">
+                <div class="content-body">
+                    <p class="content-title">
+                        Configuration
+                    </p>
+                    <div class="configuration">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="select-objects">
+                                    <p class="title">Select objects to be detected</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 ">
+                                            <div class="objects" id="objects">
+
+                                            </div>
+                                            <button class="save" onclick="saveObjects()">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>
